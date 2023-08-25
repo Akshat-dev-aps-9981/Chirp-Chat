@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Chirp Chat</string>
+    <string name="terms_and_cond">Designed &amp; Developed by <a href="https://www.google.com">Akshat Sharma</a>.</string>
+    <string name="aggrement_terms">By checking this box, I agree to <a href="https://www.google.com">terms &amp; conditions</a>.</string>
+</resources>

@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
+}
+
+
+android {
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-compat'
+    }
+
+    namespace 'com.aksapps.chirpchat'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.aksapps.chirpchat"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_19
+        targetCompatibility JavaVersion.VERSION_19
+    }
+    /*java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(19))
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "19"
+    }
+*/
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.44'
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+    implementation 'com.github.mukeshsolanki.android-otpview-pinview:otpview:3.1.0'
+    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    kapt 'com.github.bumptech.glide:compiler:4.15.0'
+    implementation "com.github.pgreze:android-reactions:1.6"
+    implementation 'com.github.3llomi:CircularStatusView:V1.0.3'
+    implementation 'com.github.OMARIHAMZA:StoryView:1.0.2-alpha'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "787251148541",
+    "project_id": "chirp-chat-3ade0",
+    "storage_bucket": "chirp-chat-3ade0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787251148541:android:c378c7f2c4f0ccb0353094",
+        "android_client_info": {
+          "package_name": "com.aksapps.chirpchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787251148541-ljtqlupa48q559boqkkhhgke462t002v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBulPfrWAaQENRrhyBdOS-1SyWjPeNW_lE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787251148541-ljtqlupa48q559boqkkhhgke462t002v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
